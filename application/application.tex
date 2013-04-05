@@ -1,0 +1,35 @@
+\documentclass{report}
+
+\usepackage{mathpazo}
+\usepackage{titlesec}% http://ctan.org/pkg/titlesec
+\titleformat{\chapter}%
+  [hang]% <shape>
+  {\normalfont\bfseries\Huge}% <format>
+  {}% <label>
+  {0pt}% <sep>
+  {}% <before code>
+\renewcommand{\thechapter}{}% Remove section references...
+\renewcommand{\thesection}{\arabic{section}}%... from subsections
+
+
+
+
+\begin{document}
+
+\chapter{MOOCulus}
+\vspace{-1.5cm}
+\rule{\textwidth}{0.2ex}
+\vspace{.3cm}
+\textsc{\small A Proposal for the Adaptive Learning Market Accelerator Program}
+
+\input projectDescription.tex
+\input proposalNarrative.tex
+\input applicationInformationSheet.tex
+\input projectBudget
+\input budgetNarrative
+\input letterOfSupport
+\input letterOfIntent
+\input taxStatus
+\input appendices
+
+\end{document}
