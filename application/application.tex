@@ -33,6 +33,18 @@
 \renewcommand*{\thequestion}{\Alph{question}}
 %\newtheorem*{cor}{Corollary}
 
+\newtheoremstyle{SlantTheoremi}{\topsep}{\topsep}%%% space between body and thm
+		{\slshape}                      %%% Thm body font
+		{3ex}                              %%% Indent amount (empty = no indent)
+		{\bfseries}            %%% Thm head font
+		{)}                              %%% Punctuation after thm head
+		{\,}                           %%% Space after thm head
+		{\thmnumber{ #2}}%%% Thm head spec
+\theoremstyle{SlantTheoremi}
+\newtheorem{subquestion}{}
+\renewcommand*{\thesubquestion}{\roman{subquestion}}
+%\newtheorem*{cor}{Corollary}
+
 
 
 \newcommand{\mooculus}{\textsl{MOOCulus}}
