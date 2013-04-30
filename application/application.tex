@@ -1,7 +1,15 @@
 \documentclass{report}
 
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+
 \usepackage{mathpazo}
-\usepackage{titlesec}% http://ctan.org/pkg/titlesec
+\usepackage{titlesec,amsthm}% http://ctan.org/pkg/titlesec
+
+\titlespacing*{\chapter}
+    {0pt} % left
+    {-1in} % before
+    {.5in} % after
+
 \titleformat{\chapter}%
   [hang]% <shape>
   {\normalfont\bfseries\Huge}% <format>
@@ -11,7 +19,24 @@
 \renewcommand{\thechapter}{}% Remove section references...
 \renewcommand{\thesection}{\arabic{section}}%... from subsections
 
-\newcommand{\mooculus}{\textit{MOOCulus}}
+
+%%% This next bit of code defines all our theorem environments
+\newtheoremstyle{SlantTheorem}{\topsep}{\topsep}%%% space between body and thm
+		{\slshape}                      %%% Thm body font
+		{}                              %%% Indent amount (empty = no indent)
+		{\bfseries}            %%% Thm head font
+		{.}                              %%% Punctuation after thm head
+		{3ex}                           %%% Space after thm head
+		{\thmnumber{ #2}}%%% Thm head spec
+\theoremstyle{SlantTheorem}
+\newtheorem{question}{}
+\renewcommand*{\thequestion}{\Alph{question}}
+%\newtheorem*{cor}{Corollary}
+
+
+
+\newcommand{\mooculus}{\textsl{MOOCulus}}
+\newcommand{\gratisu}{\textsl{GratisU}}
 
 
 
