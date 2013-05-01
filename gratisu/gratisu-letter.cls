@@ -38,13 +38,13 @@
 \newlength{\datewidth}
 \settowidth{\datewidth}{\today}
 
-\newcommand{\letterhead}{\includegraphics[trim=0in 0in 4in 0in,clip=true]{letterhead.pdf}\includegraphics[trim=4in 0in 0in 0in,clip=true]{letterhead.pdf}}
-\newlength{\letterheadwidth}
-\settowidth{\letterheadwidth}{\letterhead}
+%\newcommand{\letterhead}{\includegraphics[trim=0in 0in 4in 0in,clip=true]{letterhead.pdf}\includegraphics[trim=4in 0in 0in 0in,clip=true]{letterhead.pdf}}
+%\newlength{\letterheadwidth}
+%\settowidth{\letterheadwidth}{\letterhead}
 
 \usepackage{calc}
 %\RequirePackage[left=0.625in,right=0.625in,top=1in,bottom=1in]{geometry}
-\RequirePackage[textwidth=\letterheadwidth,paperwidth=8.5in,paperheight=11in,top=0.6in,bottom=1in]{geometry}
+\RequirePackage[textwidth=6.5in,paperwidth=8.5in,paperheight=11in,top=0.6in,bottom=1in]{geometry}
 
 % A nice serif font, but no the prescribed nonfree ITC stone
 %\usepackage[oldstylenums]{kpfonts}
